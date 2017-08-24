@@ -10,5 +10,8 @@ namespace GameCaro_beta
     {
         public static int C_WIDTH = 30;
         public static int C_HEIGHT = 30;
+        // chế độ chơi 5 con, 3 con
+        public static int C_MODE = 5;
+        public static int C_ROW = 20;
     }
 }

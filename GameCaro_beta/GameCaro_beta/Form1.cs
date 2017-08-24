@@ -25,13 +25,14 @@ namespace GameCaro_beta
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            int row = 0;
-            if (txtNumber.Text != "")
-                row = int.Parse(txtNumber.Text);
+             //int row = 0;
+            if (numberTextBox1.Text != "")
+                Common.C_ROW = int.Parse(numberTextBox1.Text);
             pnlCaro.Controls.Clear();
 
             chess = new ChessManager(pnlCaro);
-            chess.DrawBoard(row);
+            chess.DrawBoard(Common.C_ROW);
         }
+        
     }
 }
